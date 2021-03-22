@@ -17,7 +17,7 @@ def banner():
 	█                           ▀     █    ▐   ▐     ▐       █     ▐            ▐      
 	▐                                 ▐                      ▐                        
 		\033[4;33mVersion 1.0
-        \033[4;33mCoded by Leonardo Sasaki\x99
+        	\033[4;33mCoded by Leonardo Sasaki
 	""")
 
 def DoS(ip, port, size, index):
