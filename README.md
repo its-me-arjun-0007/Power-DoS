@@ -27,12 +27,12 @@ Do NOT commit any illegal activities with it. I am not responsible for any harm 
 </details>
 <details><summary>🌐 PT-BR</summary> <p/>
   <h1> Power-DoS </h1>
-  Power-DoS é uma mini ferramenta de Negação de Serviço (DoS). Ela suporta:
+  Power-DoS é uma mini ferramenta de Negação de Serviço (DoS). Ela oferece:
   
    * UDP Flooding
    * Multi-threading
-   * Código rápido e pequeno
-   * Interface de texto interativa
+   * Um código rápido e compacto
+   * Uma interface de texto interativa
    * Ataques configuráveis
      
 ## Como usar?
