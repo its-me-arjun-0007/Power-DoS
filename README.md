@@ -18,10 +18,13 @@ Agora, entre no diretório clonado: <p/>
 ```sh
 cd Power-DoS 
 ```
-E então, inicie a ferramenta utilizando python3 (argumentos ainda não são suportados, utilize a interface de texto) <p/>
+E então, inicie a ferramenta utilizando python3 <p/>
 ```sh
-python3 powerdos.py 
+python3 powerdos.py <ip> <porta> <tamanho dos pacotes> <threads>
+# Ou simplesmente
+python3 powerdos.py
 ```
+Você pode inciar ela sem parâmetros (ou faltando alguns), e inserir as informações pela interface de texto
 ## Aviso:
 NÃO cometa crimes com esta ferramenta, eu não me responsabilizo por quaisquer danos causados por ela. Note que esta é uma ferramenta simples, isto significa que sozinha ela difícilmente é capaz de causar algum dano significativo. Use apenas com intuitos educativos e/ou de aprendizado.
 </details>
@@ -47,8 +50,11 @@ cd Power-DoS
 ```
 And then, simply start the tool using python3 (arguments are still not supported, use the interactive interface instead) <p/>
 ```sh
-python3 powerdos.py 
+python3 powerdos.py <ip> <port> <packet_size> <threads>
+Or simply
+python3 powerdos.py
 ```
+You can initiate it without any parameters, or missing any. It will be prompted to you.
 ## Disclaimer:
 Do NOT commit any illegal activities with it. I am not responsible for any harm caused using this tool. Note that this is a simple tool that alone is hard to cause any real consequences, use it only with educative/learning purposes.
 </details>
