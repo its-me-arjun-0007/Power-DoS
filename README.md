@@ -51,7 +51,7 @@ cd Power-DoS
 And then, simply start the tool using python3 (arguments are still not supported, use the interactive interface instead) <p/>
 ```sh
 python3 powerdos.py <ip> <port> <packet_size> <threads>
-Or simply
+# Or simply
 python3 powerdos.py
 ```
 You can initiate it without any parameters, or missing any. It will be prompted to you.
