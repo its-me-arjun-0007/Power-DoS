@@ -7,7 +7,7 @@ import sys
 def random_phrase():
     ppl = ["Near Shelby", "Sasaki", "sysb1n", "Gr3n0xX", "Quiliarca", "Lucazz Dev", "vl0ne-$", "Xernoboy", "marreta cabeça de rato", "S4SUK3"]
     phrase = ["was here", "is watching you", "knows your name", "knows your location", "hacked NASA", "hacked FBI", "hacked you", "is looking 4 u", "is right behind you", "has hype"]
-    return ppl[random.randint(0, len(ppl)-1)] + " " + phrase[random.randint(0, len(phrase)-1)]
+    return random.choice(ppl) + " " + random.choice(phrase)
 
 def banner():
 	print(f"""\033[1;31m
