@@ -50,7 +50,7 @@ def main():
         target_size     = int(input("\033[2;32mEnter the packet size \xBB ")) if len(sys.argv) < 4 else int(sys.argv[3])
         thread_count    = int(input("\033[2;32mEnter how many threads to use \xBB ")) if len(sys.argv) < 5 else int(sys.argv[4])
     except KeyboardInterrupt:
-        print("[!] Exiting...\033[0m")
+        print("\n[!] Exiting...\033[0m")
         sys.exit()
 
     if target_port > 65535 or target_port < 1:
