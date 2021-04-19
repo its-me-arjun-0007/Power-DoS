@@ -7,15 +7,15 @@ try:
     import os
 
 except KeyboardInterrupt:
-    print('\033[1m\033[93m[!] Exiting.')
+    print("\033[1m\033[93m[!] Exiting.\033[0m")
     sys.exit()
 
 except ModuleNotFoundError:
-    print('\033[1m\033[93m[!] Missing threading. Install it!!!! ')
+    print("\033[1m\033[93m[!] Missing threading. Install it!\033[0m")
     sys.exit()
 
 if sys.version_info[0] < 3:
-    print("\033[1m\033[93m[!] Please run the tool using Python 3")
+    print("\033[1m\033[93m[!] Please run the tool using Python 3\033[0m")
     sys.exit()
 
 def random_phrase():
@@ -33,7 +33,7 @@ def banner():
      █                           ▀     █    ▐   ▐     ▐       █     ▐            ▐
     ▐                                 ▐                      ▐ {random_phrase()}
 
-    \033[2;33mVersion: 1.1 \t Coded by Leonardo Sasaki\n
+    \033[2;33mVersion: 1.2 \t Coded by Leonardo Sasaki\n
     """)
 
 def DoS(ip, port, size, index):
@@ -50,15 +50,15 @@ def main():
         target_size     = int(input("\033[2;32mEnter the packet size \xBB ")) if len(sys.argv) < 4 else int(sys.argv[3])
         thread_count    = int(input("\033[2;32mEnter how many threads to use \xBB ")) if len(sys.argv) < 5 else int(sys.argv[4])
     except KeyboardInterrupt:
-        print("[!] Shutdown...")
+        print("[!] Exiting...\033[0m")
         sys.exit()
 
     if target_port > 65535 or target_port < 1:
-        print("\n\033[1;31m[ERROR] \xBB Please, choose a port between 1 and 65535")
+        print("\n\033[1;31m[ERROR] \xBB Please, choose a port between 1 and 65535\033[0m")
         sys.exit(1)
 
     if target_size > 65500 or target_size < 1:
-        print("\n\033[1;31m[ERROR] \xBB Please, choose a size between 1 and 65500")
+        print("\n\033[1;31m[ERROR] \xBB Please, choose a size between 1 and 65500\033[0m")
         sys.exit(1)
 
     for i in range(thread_count):
@@ -66,7 +66,7 @@ def main():
             t = threading.Thread(target=DoS, args=(target_ip, target_port, target_size, i))
             t.start()
         except:
-            print(f"\n\033[1;31m[ERRO] \xBB An error ocurred initializing thread {i} (Did you enter too much threads?)")
+            print(f"\n\033[1;31m[ERRO] \xBB An error ocurred initializing thread {i} (Did you enter too much threads?)\033[0m")
 
 if __name__ == "__main__":
     main()
