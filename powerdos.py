@@ -18,27 +18,23 @@ if sys.version_info[0] < 3:
     print("\033[1m\033[93m[!] Please run the tool using Python 3")
     sys.exit()
 
-def cls():
-    os.system('cls' if os.name == 'nt' else 'clear')
-
 def random_phrase():
     ppl = ["Near Shelby", "Sasaki", "sysb1n", "Gr3n0xX", "Quiliarca", "Lucazz Dev", "vl0ne-$", "Xernoboy", "marreta cabeça de rato", "S4SUK3"]
     phrase = ["was here", "is watching you", "knows your name", "knows your location", "hacked NASA", "hacked FBI", "hacked you", "is looking 4 u", "is right behind you", "has hype"]
     return random.choice(ppl) + " " + random.choice(phrase)
 
 def banner():
-    cls()
     print(f"""\033[1;31m
-         ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄    ▄▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀▄▀▀▀▄      ▄▀▀█▄▄   ▄▀▀▀▀▄   ▄▀▀▀▀▄
-        █   █   █ █      █ █   █    ▐  █ ▐  ▄▀   ▐ █   █   █     █ ▄▀   █ █      █ █ █   ▐
-        ▐  █▀▀▀▀  █      █ ▐  █        █   █▄▄▄▄▄  ▐  █▀▀█▀      ▐ █    █ █      █    ▀▄
-           █      ▀▄    ▄▀   █   ▄    █    █    ▌   ▄▀    █        █    █ ▀▄    ▄▀ ▀▄   █
-         ▄▀         ▀▀▀▀      ▀▄▀ ▀▄ ▄▀   ▄▀▄▄▄▄   █     █        ▄▀▄▄▄▄▀   ▀▀▀▀    █▀▀▀
-        █                           ▀     █    ▐   ▐     ▐       █     ▐            ▐
-        ▐                                 ▐                      ▐ {random_phrase()}
+     ▄▀▀▄▀▀▀▄  ▄▀▀▀▀▄   ▄▀▀▄    ▄▀▀▄  ▄▀▀█▄▄▄▄  ▄▀▀▄▀▀▀▄      ▄▀▀█▄▄   ▄▀▀▀▀▄   ▄▀▀▀▀▄
+    █   █   █ █      █ █   █    ▐  █ ▐  ▄▀   ▐ █   █   █     █ ▄▀   █ █      █ █ █   ▐
+    ▐  █▀▀▀▀  █      █ ▐  █        █   █▄▄▄▄▄  ▐  █▀▀█▀      ▐ █    █ █      █    ▀▄
+       █      ▀▄    ▄▀   █   ▄    █    █    ▌   ▄▀    █        █    █ ▀▄    ▄▀ ▀▄   █
+     ▄▀         ▀▀▀▀      ▀▄▀ ▀▄ ▄▀   ▄▀▄▄▄▄   █     █        ▄▀▄▄▄▄▀   ▀▀▀▀    █▀▀▀
+     █                           ▀     █    ▐   ▐     ▐       █     ▐            ▐
+    ▐                                 ▐                      ▐ {random_phrase()}
 
-        \033[2;33mVersion: 1.1 \t Coded by Leonardo Sasaki\n
-        """)
+    \033[2;33mVersion: 1.1 \t Coded by Leonardo Sasaki\n
+    """)
 
 def DoS(ip, port, size, index):
         sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
@@ -54,7 +50,6 @@ def main():
         target_size     = int(input("\033[2;32mEnter the packet size \xBB ")) if len(sys.argv) < 4 else int(sys.argv[3])
         thread_count    = int(input("\033[2;32mEnter how many threads to use \xBB ")) if len(sys.argv) < 5 else int(sys.argv[4])
     except KeyboardInterrupt:
-        cls()
         print("[!] Shutdown...")
         sys.exit()
 
