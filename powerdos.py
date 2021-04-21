@@ -3,11 +3,7 @@ try:
     import socket
     import random
     import sys
-
-except KeyboardInterrupt:
-    print("\033[1;31m[!] \033[0mExiting.")
-    sys.exit()
-
+    
 except ImportError as e:
     print(f"\033[1;31m[ERROR] \033[0m\xBB {e}")
     sys.exit()
