@@ -11,15 +11,15 @@
 ## Como usar?
 
 Primeiramente, clone ela: <p/>
-```sh
+```
 git clone https://github.com/Black-Hell-Team/Power-DoS.git
 ```
 Agora, entre no diretório clonado: <p/>
-```sh
+```
 cd Power-DoS 
 ```
 E então, inicie a ferramenta utilizando python3 <p/>
-```sh
+```
 python3 powerdos.py <ip> <porta> <tamanho dos pacotes> <threads>
 # Ou simplesmente
 python3 powerdos.py
@@ -41,15 +41,15 @@ Power-DoS is a mini Denial Of Service tool. It features:
 ## How to use it?
 
 Firstly, gitclone it: <p/>
-```sh
+```
 git clone https://github.com/Black-Hell-Team/Power-DoS.git
 ```
 Now, get into the cloned directory: <p/>
-```sh
+```
 cd Power-DoS 
 ```
 And then, simply start the tool using python3 (arguments are still not supported, use the interactive interface instead) <p/>
-```sh
+```
 python3 powerdos.py <ip> <port> <packet_size> <threads>
 # Or simply
 python3 powerdos.py
