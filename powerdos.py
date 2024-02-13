@@ -23,7 +23,7 @@ def banner():
     █                           ▀     █    ▐   ▐     ▐       █     ▐            ▐
     ▐                                 ▐                      ▐ {random_phrase()}
 
-    \033[2;33mVersion: 1.3 \t Coded by Leonardo Sasaki\n\033[0m
+    \033[2;33mVersion: 1.3 \t Coded by it's me arjun\n\033[0m
     """)
 
 def DoS(ip, port, size, index):
